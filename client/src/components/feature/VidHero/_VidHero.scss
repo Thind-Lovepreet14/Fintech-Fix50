@@ -1,0 +1,79 @@
+.vidhero {
+
+
+    &__header {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Montserrat' , sans-serif;
+        color: #fff;
+            
+          &--title {
+              color: #fff;
+              font-size: 2em;
+              letter-spacing: -2px;
+              font-weight: 700;
+              margin-bottom: .75%;
+              z-index: 2;
+  
+              @media only screen and (max-width: 1075px) {
+                font-size: 2.75em;
+              }
+  
+              @media only screen and (max-width: 550px) {
+                font-size: 2.15em;
+                margin-bottom: 3%;
+              }
+  
+              @media only screen and (max-width: 300px) {
+                font-size: 2em;
+              }
+          }
+      
+          &--subtitle {
+              color: #fff;
+              margin-bottom: 5%;
+              font-size: 16px;
+              font-weight: 600;
+              z-index: 2;
+  
+              @media only screen and (max-width: 550px) {
+                margin-bottom: 3%;
+              }
+  
+              @media only screen and (max-width: 300px) {
+                font-size: 14px;
+              }
+          }
+      
+          &--button {
+              color: #fff;
+              background-color:rgb(255, 169, 46);
+              font-size: 12px;
+              text-transform: uppercase;
+              font-weight: 600;
+              text-decoration: none;
+              padding:16px 30px 18px;
+              border-radius: 5px;
+              width: fit-content;
+              align-self: center;
+              transition: .3s;
+              z-index: 2;
+              margin-bottom: 80px;
+          }
+      }
+
+      &__video {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -9;
+      }
+}
